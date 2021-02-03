@@ -1,0 +1,46 @@
+img {
+    width: 200px;
+    height: 200px;
+    border: 6px solid white;
+}
+
+.blinker {
+    animation: blink 1s;
+    animation-iteration-count: infinite;
+}
+
+body {
+    display: flex;
+    padding: 1em;
+}
+
+#contenidor-fotos {
+    height: 90vh;
+    overflow-y: scroll;
+}
+
+#contenidor-frame {
+    flex: 1;
+}
+
+#frame {
+    width: 100%;
+    height: 95vh;
+    padding: 6px;
+}
+
+.inputs {
+    display: flex;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
